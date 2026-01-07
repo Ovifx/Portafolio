@@ -681,3 +681,108 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+#habilidades .section-title:not(:first-child) {
+    margin-top: 4rem;
+    padding-top: 2rem;
+}
+.skill-card.soft-skill {
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card.soft-skill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary) 0%, #818cf8 100%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.skill-card.soft-skill:hover::before {
+    opacity: 1;
+}
+
+.skill-card.soft-skill .skill-bar {
+    display: none;
+}
+
+.skill-card.language-skill p {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.skill-progress.animated {
+    animation: progressAnimation 1.5s ease-out forwards;
+}
+
+@keyframes progressAnimation {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--progress-width);
+    }
+}
+
+.language-level {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    font-size: 0.875rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.skill-card.soft-skill:hover {
+    border-color: var(--primary);
+    background: linear-gradient(135deg, var(--bg) 0%, var(--bg-secondary) 100%);
+}
+
+@media (max-width: 768px) {
+    #habilidades .section-title:not(:first-child) {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+    }
+}
+.language-selector {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.lang-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--border);
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    color: var(--text);
+}
+
+.lang-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.lang-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .language-selector {
+        margin-left: 0;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+}
