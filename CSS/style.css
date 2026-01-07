@@ -3,7 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+body.dark {
+    --bg: #0f172a;
+    --bg-secondary: #020617;
 
+    --text: #e5e7eb;
+    --text-light: #94a3b8;
+
+    --secondary: #e5e7eb;
+
+    --border: #1e293b;
+
+    --primary: #6366f1;
+    --primary-dark: #818cf8;
+}
+
+body.dark header {
+    background: rgba(15, 23, 42, 0.95);
+}
+
+body.dark .nav-links {
+    background: #020617;
+}
+
+body.dark .skill-card,
+body.dark .project-card,
+body.dark .timeline-content,
+body.dark .contact-item {
+    background: #020617;
+}
+
+body.dark footer {
+    background: #020617;
+}
 :root {
     --primary: #6366f1;
     --primary-dark: #4f46e5;
