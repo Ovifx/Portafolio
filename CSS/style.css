@@ -292,7 +292,6 @@ section {
     color: var(--secondary);
 }
 
-/* Sobre Mí */
 .about-content {
     max-width: 900px;
     margin: 0 auto;
@@ -339,7 +338,6 @@ section {
     font-weight: 600;
 }
 
-/* Timeline Experiencia */
 .timeline {
     position: relative;
     padding-left: 2rem;
@@ -429,7 +427,6 @@ section {
     font-weight: bold;
 }
 
-/* Habilidades */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -477,7 +474,6 @@ section {
     width: 0;
 }
 
-/* Proyectos */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -540,7 +536,6 @@ section {
     font-weight: 500;
 }
 
-/* Contacto */
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -641,7 +636,6 @@ section {
     min-height: 120px;
 }
 
-/* Footer */
 footer {
     background: var(--secondary);
     color: white;
