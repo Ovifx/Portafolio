@@ -8,20 +8,20 @@ const translations = {
         nav_habilidades: "Habilidades",
         nav_proyectos: "Proyectos",
         nav_contacto: "Contacto",
-        
+
         // Hero
         hero_greeting: "Hola, soy",
         hero_description: "Desarrollador Full-Stack .NET con más de 3 años implementando soluciones empresariales críticas y gestionando infraestructura TI",
         hero_btn_projects: "Ver Proyectos",
         hero_btn_contact: "Contáctame",
-        
+
         // Sobre Mí
         about_title: "Sobre Mí",
         about_description: "Desarrollador Full-Stack especializado en .NET con experiencia comprobada en sistemas empresariales críticos. Actualmente trabajando como Analista IT en Select Solutions, donde lidero el desarrollo de soluciones end-to-end desde análisis hasta despliegue en producción. Especializado en creacion de sistemas eficientes y escalables.",
         about_years: "Años de Experiencia",
         about_projects: "Proyectos Completados",
         about_commitment: "Compromiso",
-        
+
         // Experiencia
         exp_title: "Experiencia Profesional",
         exp_current: "Actualidad",
@@ -33,7 +33,7 @@ const translations = {
         exp_job1_desc3: "Administración de infraestructura Windows Server, Linux, IIS y Apache",
         exp_job1_desc4: "Implementación de seguridad de red con pfSense y Active Directory",
         exp_job1_desc5: "Automatización de procesos con Python y JSX (Adobe ExtendScript)",
-        
+
         exp_job2_title: "Programador Jr",
         exp_job2_company: "Garan, El Salvador",
         exp_job2_date: "Noviembre 2022 - Junio 2024",
@@ -42,7 +42,7 @@ const translations = {
         exp_job2_desc3: "Diseño y optimización de bases de datos SQL Server",
         exp_job2_desc4: "Implementación de interfaces responsivas con Bootstrap y jQuery",
         exp_job2_desc5: "Desarrollo de sistemas especializados de control de inventarios y gestión de IPs",
-        
+
         exp_job3_title: "Infraestructura IT / Soporte Técnico",
         exp_job3_company: "Garan, El Salvador",
         exp_job3_date: "Julio 2022 - Noviembre 2022",
@@ -50,7 +50,7 @@ const translations = {
         exp_job3_desc2: "Migración de telefonía análoga a sistema IP, reduciendo costos operativos",
         exp_job3_desc3: "Instalación y configuración de redes estructuradas (cableado UTP Cat 5e/6)",
         exp_job3_desc4: "Administración de Windows, Microsoft 365 y gestión de impresoras de red",
-        
+
         // Habilidades
         skills_title: "Habilidades Técnicas",
         skills_backend: "Backend Development",
@@ -65,7 +65,7 @@ const translations = {
         skills_os_desc: "Windows Server (Avanzado), Linux (Intermedio), Redes",
         skills_automation: "Automatización",
         skills_automation_desc: "Python Scripts, JSX (Adobe ExtendScript), PowerShell",
-        
+
         // Habilidades Blandas
         soft_skills_title: "Habilidades Blandas",
         soft_responsibility: "Responsabilidad",
@@ -98,14 +98,14 @@ const translations = {
         soft_pressure_desc: "Capacidad para mantener altos niveles de productividad y calidad bajo condiciones de estrés y plazos ajustados",
         soft_improvisation: "Capacidad de improvisación",
         soft_improvisation_desc: "Flexibilidad para adaptarse a situaciones imprevistas y resolver problemas sin planificación previa",
-        
+
         // Idiomas
         languages_title: "Idiomas",
         lang_spanish: "Español",
         lang_spanish_desc: "Nativo - Dominio completo",
         lang_english: "Inglés",
         lang_english_desc: "En desarrollo - Lectura y escritura: Intermedio | Conversación y comprensión auditiva: Básico",
-        
+
         // Proyectos
         projects_title: "Proyectos Destacados",
         project1_title: "Sistema de Facturación Electrónica DTE",
@@ -121,7 +121,7 @@ const translations = {
         project6_title: "Módulos ERP Personalizados",
         project6_desc: "Desarrollo de módulos especializados para sistema POLY PM: control de calidad, gestión de órdenes de producción e importadores de datos.",
         btn_more_info: "Más Información",
-        
+
         // Contacto
         contact_title: "Contacto",
         contact_ready: "¿Listo para trabajar juntos?",
@@ -138,9 +138,145 @@ const translations = {
         form_message_placeholder: "Escribe tu mensaje aquí...",
         form_submit: "Enviar Mensaje",
         form_success: "¡Gracias {name}! Tu mensaje ha sido enviado. Te contactaré pronto al correo {email}.",
-        
+
         // Footer
-        footer_rights: "Todos los derechos reservados."
+        footer_rights: "Todos los derechos reservados.",
+        modal_projects_title: "Proyectos Destacados — Detalles",
+        modal_close: "Cerrar",
+        modal_open : "Ver Detalles de Proyectos",
+
+        // Proyecto 1 - DTE
+        project1_modal_title: "Sistema de Facturación Electrónica DTE",
+        project1_modal_subtitle: "Integración completa con Ministerio de Hacienda de El Salvador",
+        project1_context_title: "Contexto del Proyecto",
+        project1_context_p1: "Sistema integral de facturación electrónica desarrollado para cumplir con las regulaciones del Ministerio de Hacienda de El Salvador. La solución automatiza el proceso completo de generación, validación y envío de Documentos Tributarios Electrónicos (DTE), incluyendo tres tipos principales: Facturas de Exportación, Sujeto Excluido y Notas de Remisión.",
+        project1_context_p2: "El sistema procesa archivos Excel con información de productos, realiza cálculos automáticos, gestiona la firma digital certificada mediante un servicio Spring Boot, y maneja la comunicación bidireccional con los servicios del Ministerio de Hacienda para la validación y aprobación de documentos tributarios.",
+        project1_flow_title: "Flujo del Sistema",
+        project1_step1_title: "Importación y Procesamiento",
+        project1_step1_desc: "El sistema importa archivos Excel con items, precios y descripciones. Los datos se procesan y almacenan en SQL Server, calculando automáticamente cantidades, precios unitarios y totales.",
+        project1_step2_title: "Validación Contable",
+        project1_step2_desc: "Los documentos procesados se presentan al contador para revisión previa. El sistema determina el estatus y permite aprobar o rechazar cada factura antes de continuar con el proceso.",
+        project1_step3_title: "Firma Digital Certificada",
+        project1_step3_desc: "Un servicio Spring Boot corriendo en segundo plano en Windows Server recibe una petición POST. El servicio valida la llave privada y el DUI, procediendo a firmar digitalmente el documento tributario.",
+        project1_step4_title: "Envío a Ministerio de Hacienda",
+        project1_step4_desc: "El documento firmado se envía mediante POST al Ministerio de Hacienda con la llave pública y número de DUI. Hacienda valida y retorna el código GUI (Código de Generación Único).",
+        project1_step5_title: "Generación y Distribución",
+        project1_step5_desc: "Con la aprobación confirmada, el sistema genera el PDF de la factura y lo envía automáticamente por correo electrónico. En caso de rechazo, se notifica mediante SweetAlert con detalles específicos del error.",
+        project1_metric1: "Facturas Procesadas",
+        project1_metric2: "Tasa de Aprobación",
+        project1_metric3: "Tipos de DTE",
+        project1_metric4: "Exportaciones Mes",
+        project1_features_title: "Características Principales",
+        project1_feature1: "Procesamiento automático de datos desde Excel a SQL Server",
+        project1_feature2: "Cálculo automático de inventario, ventas y exportaciones mensuales",
+        project1_feature3: "Generación de reportes en Excel y PDF",
+        project1_feature4: "Sistema de notificaciones con detalles específicos de errores",
+        project1_feature5: "Integración completa con servicios gubernamentales",
+
+        // Proyecto 2 - Inventario IP
+        project2_modal_title: "Sistema de Control de Inventario de IPs",
+        project2_modal_subtitle: "Gestión integral de infraestructura de red corporativa",
+        project2_context_title: "Contexto del Proyecto",
+        project2_context_p1: "Sistema de gestión y control desarrollado para resolver la problemática de administración de direcciones IP en la red corporativa. La solución permite identificar en tiempo real qué direcciones IP están libres, en uso o inactivas, optimizando la asignación de recursos de red y facilitando la planificación de infraestructura.",
+        project2_context_p2: "El sistema está conectado a SQL Server con índices optimizados para búsquedas rápidas y cuenta con un sistema de monitoreo automático mediante ping. Incluye integración con Apache Guacamole para conexión remota directa a equipos cliente, centralizando la gestión de red y soporte técnico en una única plataforma.",
+        project2_flow_title: "Flujo del Sistema",
+        project2_step1_title: "Registro y Categorización",
+        project2_step1_desc: "Las direcciones IP se registran en la base de datos SQL Server y se categorizan por departamentos (TI, Marketing, Producción, etc.), facilitando la organización y búsqueda.",
+        project2_step2_title: "Monitoreo Automático",
+        project2_step2_desc: "El sistema ejecuta automáticamente ping a cada IP registrada (4 paquetes por verificación) en intervalos programados, actualizando el estado en tiempo real.",
+        project2_step3_title: "Actualización de Estados",
+        project2_step3_desc: "Basándose en las respuestas del ping, el sistema actualiza automáticamente el estado de cada IP: Activa (responde), Inactiva (no responde), o Disponible (sin asignar).",
+        project2_step4_title: "Notificaciones y Alertas",
+        project2_step4_desc: "Cuando una IP previamente activa deja de responder o cambia a estado inactivo, el sistema genera notificaciones automáticas para el equipo de TI.",
+        project2_step5_title: "Conexión Remota Integrada",
+        project2_step5_desc: "Mediante integración con Guacamole y agentes instalados en máquinas cliente, permite establecer conexiones remotas directamente desde el gestor de IPs sin herramientas adicionales.",
+        project2_metric1: "IPs Activas",
+        project2_metric2: "IPs Disponibles",
+        project2_metric3: "IPs Inactivas",
+        project2_metric4: "Departamentos",
+        project2_features_title: "Características Principales",
+        project2_feature1: "Base de datos SQL con índices optimizados para búsquedas rápidas",
+        project2_feature2: "Sistema de ping automático programable por intervalos",
+        project2_feature3: "Organización por departamentos y ubicaciones físicas",
+        project2_feature4: "Integración con Apache Guacamole para soporte remoto",
+        project2_feature5: "Historial de cambios de estado y disponibilidad",
+
+        // Proyecto 3 - Adobe
+        project3_modal_title: "Suite de Automatización para Adobe Illustrator",
+        project3_modal_subtitle: "Scripts personalizados para optimización de procesos creativos",
+        project3_context_title: "Contexto del Proyecto",
+        project3_context_p1: "Desarrollo de una suite completa de 23 scripts JSX/JavaScript para Adobe Illustrator, diseñada específicamente para automatizar tareas repetitivas del departamento de diseño y bordado. La solución surgió de la necesidad de optimizar flujos de trabajo que consumían tiempo excesivo en tareas manuales que podían ser automatizadas.",
+        project3_context_p2: "Cada script fue desarrollado considerando las necesidades específicas de los artistas, abarcando desde posicionamiento automático de objetos, creación de plantillas estandarizadas, hasta generación de elementos tipográficos y numéricos. El impacto medible de la solución fue de aproximadamente 30 minutos de ahorro por artista por proyecto, multiplicándose significativamente en el flujo diario de trabajo.",
+        project3_metric1: "Scripts Desarrollados",
+        project3_metric2: "Ahorro por Artista",
+        project3_metric3: "Mejora en Eficiencia",
+        project3_metric4: "Adopción del Equipo",
+        project3_impact_title: "Impacto en el Departamento",
+        project3_impact1: "Reducción de 30 minutos de trabajo manual por proyecto/artista",
+        project3_impact2: "Estandarización de procesos y calidad consistente",
+        project3_impact3: "Eliminación de errores humanos en tareas repetitivas",
+        project3_impact4: "Liberación de tiempo creativo para tareas de mayor valor",
+        project3_impact5: "Capacitación simplificada para nuevos integrantes del equipo",
+
+        // Proyecto 4 - Tickets
+        project4_modal_title: "Generador Automático de Tickets de Precios",
+        project4_modal_subtitle: "Solución de impresión masiva con personalización dinámica",
+        project4_context_title: "Contexto del Proyecto",
+        project4_context_p1: "Aplicación desktop desarrollada en Python para resolver el problema de generación manual de tickets de precios, un proceso que consumía tiempo considerable y era propenso a errores. La solución permite importar archivos Excel con información de productos y generar automáticamente tickets listos para impresión en impresoras Zebra.",
+        project4_context_p2: "El sistema incluye una interfaz de vista previa donde los usuarios pueden visualizar exactamente cómo se imprimirá cada ticket, con capacidad de personalizar posiciones de elementos (precio, código de barras, descripción). Las configuraciones se guardan en formato JSON, permitiendo reutilizar layouts para diferentes categorías de productos sin necesidad de reconfigurar cada vez.",
+        project4_metric1: "Tickets/Hora",
+        project4_metric2: "Reducción de Tiempo",
+        project4_metric3: "Tasa de Error",
+        project4_benefits_title: "Beneficios de la Solución",
+        project4_benefit1: "Eliminación completa del proceso manual de creación de tickets",
+        project4_benefit2: "Configuraciones guardadas en JSON para reutilización instantánea",
+        project4_benefit3: "Vista previa en tiempo real antes de imprimir",
+        project4_benefit4: "Integración directa con impresoras Zebra para impresión profesional",
+        project4_benefit5: "Procesamiento de cientos de tickets en minutos",
+
+        // Proyecto 5 - ZKTeco
+        project5_modal_title: "Sistema de Control de Terminales ZKTeco",
+        project5_modal_subtitle: "Gestión centralizada de asistencia biométrica",
+        project5_context_title: "Contexto del Proyecto",
+        project5_context_p1: "Aplicación desktop desarrollada en C# para resolver la problemática crítica de gestión de terminales biométricas ZKTeco TS300 después de que el sistema oficial de la empresa dejara de funcionar. La solución permite administrar 4 terminales simultáneamente, gestionando usuarios, huellas digitales y registros de marcaciones.",
+        project5_context_p2: "Utilizando la librería ZKemkeeper.dll, el sistema establece conexiones TCP a cada terminal mediante puertos específicos, permitiendo operaciones de importación/exportación de datos de usuarios, sincronización de huellas digitales entre terminales, y extracción de registros de asistencia para procesamiento en sistemas de recursos humanos.",
+        project5_metric1: "Terminales TS300",
+        project5_metric2: "Usuarios Registrados",
+        project5_metric3: "Huellas Activas",
+        project5_metric4: "Disponibilidad",
+        project5_functions_title: "Funcionalidades Clave",
+        project5_function1: "Conexión simultánea a múltiples terminales vía TCP",
+        project5_function2: "Importación y exportación masiva de usuarios y huellas",
+        project5_function3: "Sincronización de datos biométricos entre dispositivos",
+        project5_function4: "Extracción y consolidación de registros de asistencia",
+        project5_function5: "Recuperación total de funcionalidad crítica del sistema de marcaciones",
+
+        // Proyecto 6 - ERP
+        project6_modal_title: "Módulos Personalizados para ERP POLY PM",
+        project6_modal_subtitle: "Optimización de procesos de gestión de órdenes de producción",
+        project6_context_title: "Contexto del Proyecto",
+        project6_context_p1: "Desarrollo de aplicación web en C# ASP.NET MVC para resolver las ineficiencias críticas del sistema ERP POLY PM en la gestión de órdenes de producción. El sistema original presentaba limitaciones significativas en velocidad, funcionalidad y usabilidad para la asignación de órdenes a artistas y el seguimiento de estado de producción.",
+        project6_context_p2: "La solución incluye una API personalizada que permite múltiples conexiones simultáneas a la base de datos de POLY PM, una interfaz web optimizada para asignación rápida de órdenes, gestión de cambios de estado, liberación de órdenes, modificación de cartillas, y descarga de documentación completa. Incluye además un módulo de escaneo para inspección de calidad y gestión de pallets en bodega.",
+        project6_metric1: "Órdenes Activas",
+        project6_metric2: "Artistas",
+        project6_metric3: "Eficiencia",
+        project6_metric4: "Completadas Hoy",
+        project6_improvements_title: "Mejoras Implementadas",
+        project6_improvement1: "Velocidad de asignación 10x más rápida que el sistema original",
+        project6_improvement2: "Finalización múltiple de órdenes (imposible en POLY PM)",
+        project6_improvement3: "API personalizada para múltiples conexiones concurrentes",
+        project6_improvement4: "Descarga automatizada de documentación completa para artistas",
+        project6_improvement5: "Módulo de escaneo para control de calidad y gestión de bodega",
+
+        // Elementos comunes del modal
+        section_context: "Contexto del Proyecto",
+        section_flow: "Flujo del Sistema",
+        section_features: "Características Principales",
+        section_benefits: "Beneficios de la Solución",
+        section_impact: "Impacto en el Departamento",
+        section_functions: "Funcionalidades Clave",
+        section_improvements: "Mejoras Implementadas",
+        step_number: "Paso",
     },
     en: {
         // Navigation
@@ -150,20 +286,20 @@ const translations = {
         nav_habilidades: "Skills",
         nav_proyectos: "Projects",
         nav_contacto: "Contact",
-        
+
         // Hero
         hero_greeting: "Hi, I'm",
         hero_description: "Full-Stack .NET Developer with over 3 years implementing critical enterprise solutions and managing IT infrastructure",
         hero_btn_projects: "View Projects",
         hero_btn_contact: "Contact Me",
-        
+
         // About Me
         about_title: "About Me",
         about_description: "Full-Stack Developer specialized in .NET with proven experience in critical enterprise systems. Currently working as IT Analyst at Select Solutions, where I lead the development of end-to-end solutions from analysis to production deployment. Specialized in creating efficient and scalable systems.",
         about_years: "Years of Experience",
         about_projects: "Completed Projects",
         about_commitment: "Commitment",
-        
+
         // Experience
         exp_title: "Professional Experience",
         exp_current: "Present",
@@ -175,7 +311,7 @@ const translations = {
         exp_job1_desc3: "Administration of Windows Server, Linux, IIS and Apache infrastructure",
         exp_job1_desc4: "Network security implementation with pfSense and Active Directory",
         exp_job1_desc5: "Process automation with Python and JSX (Adobe ExtendScript)",
-        
+
         exp_job2_title: "Junior Programmer",
         exp_job2_company: "Garan, El Salvador",
         exp_job2_date: "November 2022 - June 2024",
@@ -184,7 +320,7 @@ const translations = {
         exp_job2_desc3: "SQL Server database design and optimization",
         exp_job2_desc4: "Responsive interface implementation with Bootstrap and jQuery",
         exp_job2_desc5: "Development of specialized inventory control and IP management systems",
-        
+
         exp_job3_title: "IT Infrastructure / Technical Support",
         exp_job3_company: "Garan, El Salvador",
         exp_job3_date: "July 2022 - November 2022",
@@ -192,7 +328,7 @@ const translations = {
         exp_job3_desc2: "Migration from analog to IP telephony, reducing operational costs",
         exp_job3_desc3: "Installation and configuration of structured networks (UTP Cat 5e/6 cabling)",
         exp_job3_desc4: "Windows administration, Microsoft 365 and network printer management",
-        
+
         // Skills
         skills_title: "Technical Skills",
         skills_backend: "Backend Development",
@@ -207,7 +343,7 @@ const translations = {
         skills_os_desc: "Windows Server (Advanced), Linux (Intermediate), Networks",
         skills_automation: "Automation",
         skills_automation_desc: "Python Scripts, JSX (Adobe ExtendScript), PowerShell",
-        
+
         // Soft Skills
         soft_skills_title: "Soft Skills",
         soft_responsibility: "Responsibility",
@@ -240,14 +376,14 @@ const translations = {
         soft_pressure_desc: "Ability to maintain high levels of productivity and quality under stress conditions and tight deadlines",
         soft_improvisation: "Improvisation Ability",
         soft_improvisation_desc: "Flexibility to adapt to unforeseen situations and solve problems without prior planning",
-        
+
         // Languages
         languages_title: "Languages",
         lang_spanish: "Spanish",
         lang_spanish_desc: "Native - Full proficiency",
         lang_english: "English",
         lang_english_desc: "In development - Reading and writing: Intermediate | Conversation and listening comprehension: Basic",
-        
+
         // Projects
         projects_title: "Featured Projects",
         project1_title: "DTE Electronic Invoicing System",
@@ -263,7 +399,7 @@ const translations = {
         project6_title: "Custom ERP Modules",
         project6_desc: "Development of specialized modules for POLY PM system: quality control, production order management and data importers.",
         btn_more_info: "More Information",
-        
+
         // Contact
         contact_title: "Contact",
         contact_ready: "Ready to work together?",
@@ -280,16 +416,152 @@ const translations = {
         form_message_placeholder: "Write your message here...",
         form_submit: "Send Message",
         form_success: "Thank you {name}! Your message has been sent. I'll contact you soon at {email}.",
-        
+
         // Footer
-        footer_rights: "All rights reserved."
+        footer_rights: "All rights reserved.",
+        modal_projects_title: "Featured Projects — Details",
+        modal_close: "Close",
+        modal_open : "View Project Details",
+
+        // Project 1 - DTE
+        project1_modal_title: "DTE Electronic Invoicing System",
+        project1_modal_subtitle: "Complete integration with El Salvador's Ministry of Finance",
+        project1_context_title: "Project Context",
+        project1_context_p1: "Comprehensive electronic invoicing system developed to comply with regulations from El Salvador's Ministry of Finance. The solution automates the complete process of generation, validation, and submission of Electronic Tax Documents (DTE), including three main types: Export Invoices, Excluded Subject, and Remission Notes.",
+        project1_context_p2: "The system processes Excel files with product information, performs automatic calculations, manages certified digital signature through a Spring Boot service, and handles bidirectional communication with Ministry of Finance services for validation and approval of tax documents.",
+        project1_flow_title: "System Flow",
+        project1_step1_title: "Import and Processing",
+        project1_step1_desc: "The system imports Excel files with items, prices, and descriptions. Data is processed and stored in SQL Server, automatically calculating quantities, unit prices, and totals.",
+        project1_step2_title: "Accounting Validation",
+        project1_step2_desc: "Processed documents are presented to the accountant for prior review. The system determines status and allows approving or rejecting each invoice before continuing the process.",
+        project1_step3_title: "Certified Digital Signature",
+        project1_step3_desc: "A Spring Boot service running in the background on Windows Server receives a POST request. The service validates the private key and DUI, proceeding to digitally sign the tax document.",
+        project1_step4_title: "Submission to Ministry of Finance",
+        project1_step4_desc: "The signed document is sent via POST to the Ministry of Finance with the public key and DUI number. Finance validates and returns the GUI code (Unique Generation Code).",
+        project1_step5_title: "Generation and Distribution",
+        project1_step5_desc: "With confirmed approval, the system generates the invoice PDF and automatically sends it via email. In case of rejection, it notifies through SweetAlert with specific error details.",
+        project1_metric1: "Processed Invoices",
+        project1_metric2: "Approval Rate",
+        project1_metric3: "DTE Types",
+        project1_metric4: "Monthly Exports",
+        project1_features_title: "Main Features",
+        project1_feature1: "Automatic data processing from Excel to SQL Server",
+        project1_feature2: "Automatic calculation of inventory, sales, and monthly exports",
+        project1_feature3: "Report generation in Excel and PDF",
+        project1_feature4: "Notification system with specific error details",
+        project1_feature5: "Complete integration with government services",
+
+        // Project 2 - IP Inventory
+        project2_modal_title: "IP Inventory Control System",
+        project2_modal_subtitle: "Comprehensive corporate network infrastructure management",
+        project2_context_title: "Project Context",
+        project2_context_p1: "Management and control system developed to solve the problem of IP address administration in the corporate network. The solution allows real-time identification of which IP addresses are available, in use, or inactive, optimizing network resource allocation and facilitating infrastructure planning.",
+        project2_context_p2: "The system is connected to SQL Server with optimized indexes for fast searches and features an automatic monitoring system via ping. Includes integration with Apache Guacamole for direct remote connection to client machines, centralizing network management and technical support in a single platform.",
+        project2_flow_title: "System Flow",
+        project2_step1_title: "Registration and Categorization",
+        project2_step1_desc: "IP addresses are registered in the SQL Server database and categorized by departments (IT, Marketing, Production, etc.), facilitating organization and search.",
+        project2_step2_title: "Automatic Monitoring",
+        project2_step2_desc: "The system automatically executes ping to each registered IP (4 packets per verification) at scheduled intervals, updating status in real-time.",
+        project2_step3_title: "Status Update",
+        project2_step3_desc: "Based on ping responses, the system automatically updates each IP status: Active (responds), Inactive (no response), or Available (unassigned).",
+        project2_step4_title: "Notifications and Alerts",
+        project2_step4_desc: "When a previously active IP stops responding or changes to inactive status, the system generates automatic notifications for the IT team.",
+        project2_step5_title: "Integrated Remote Connection",
+        project2_step5_desc: "Through integration with Guacamole and agents installed on client machines, allows establishing remote connections directly from the IP manager without additional tools.",
+        project2_metric1: "Active IPs",
+        project2_metric2: "Available IPs",
+        project2_metric3: "Inactive IPs",
+        project2_metric4: "Departments",
+        project2_features_title: "Main Features",
+        project2_feature1: "SQL database with optimized indexes for fast searches",
+        project2_feature2: "Programmable automatic ping system by intervals",
+        project2_feature3: "Organization by departments and physical locations",
+        project2_feature4: "Integration with Apache Guacamole for remote support",
+        project2_feature5: "History of status changes and availability",
+
+        // Project 3 - Adobe
+        project3_modal_title: "Adobe Illustrator Automation Suite",
+        project3_modal_subtitle: "Custom scripts for creative process optimization",
+        project3_context_title: "Project Context",
+        project3_context_p1: "Development of a complete suite of 23 JSX/JavaScript scripts for Adobe Illustrator, specifically designed to automate repetitive tasks in the design and embroidery department. The solution arose from the need to optimize workflows that consumed excessive time on manual tasks that could be automated.",
+        project3_context_p2: "Each script was developed considering the specific needs of artists, covering from automatic object positioning, creation of standardized templates, to generation of typographic and numeric elements. The measurable impact of the solution was approximately 30 minutes savings per artist per project, multiplying significantly in the daily workflow.",
+        project3_metric1: "Developed Scripts",
+        project3_metric2: "Savings per Artist",
+        project3_metric3: "Efficiency Improvement",
+        project3_metric4: "Team Adoption",
+        project3_impact_title: "Department Impact",
+        project3_impact1: "30 minutes reduction in manual work per project/artist",
+        project3_impact2: "Process standardization and consistent quality",
+        project3_impact3: "Elimination of human errors in repetitive tasks",
+        project3_impact4: "Liberation of creative time for higher-value tasks",
+        project3_impact5: "Simplified training for new team members",
+
+        // Project 4 - Tickets
+        project4_modal_title: "Automatic Price Ticket Generator",
+        project4_modal_subtitle: "Mass printing solution with dynamic customization",
+        project4_context_title: "Project Context",
+        project4_context_p1: "Desktop application developed in Python to solve the problem of manual price ticket generation, a process that consumed considerable time and was prone to errors. The solution allows importing Excel files with product information and automatically generating tickets ready for printing on Zebra printers.",
+        project4_context_p2: "The system includes a preview interface where users can visualize exactly how each ticket will be printed, with the ability to customize element positions (price, barcode, description). Configurations are saved in JSON format, allowing reuse of layouts for different product categories without needing to reconfigure each time.",
+        project4_metric1: "Tickets/Hour",
+        project4_metric2: "Time Reduction",
+        project4_metric3: "Error Rate",
+        project4_benefits_title: "Solution Benefits",
+        project4_benefit1: "Complete elimination of manual ticket creation process",
+        project4_benefit2: "Configurations saved in JSON for instant reuse",
+        project4_benefit3: "Real-time preview before printing",
+        project4_benefit4: "Direct integration with Zebra printers for professional printing",
+        project4_benefit5: "Processing of hundreds of tickets in minutes",
+
+        // Project 5 - ZKTeco
+        project5_modal_title: "ZKTeco Terminal Control System",
+        project5_modal_subtitle: "Centralized biometric attendance management",
+        project5_context_title: "Project Context",
+        project5_context_p1: "Desktop application developed in C# to solve the critical problem of managing ZKTeco TS300 biometric terminals after the company's official system stopped working. The solution allows managing 4 terminals simultaneously, handling users, fingerprints, and attendance records.",
+        project5_context_p2: "Using the ZKemkeeper.dll library, the system establishes TCP connections to each terminal through specific ports, allowing import/export operations of user data, fingerprint synchronization between terminals, and extraction of attendance records for processing in human resources systems.",
+        project5_metric1: "TS300 Terminals",
+        project5_metric2: "Registered Users",
+        project5_metric3: "Active Fingerprints",
+        project5_metric4: "Availability",
+        project5_functions_title: "Key Functionalities",
+        project5_function1: "Simultaneous connection to multiple terminals via TCP",
+        project5_function2: "Mass import and export of users and fingerprints",
+        project5_function3: "Biometric data synchronization between devices",
+        project5_function4: "Extraction and consolidation of attendance records",
+        project5_function5: "Complete recovery of critical attendance system functionality",
+
+        // Project 6 - ERP
+        project6_modal_title: "Custom ERP POLY PM Modules",
+        project6_modal_subtitle: "Production order management process optimization",
+        project6_context_title: "Project Context",
+        project6_context_p1: "Web application development in C# ASP.NET MVC to solve critical inefficiencies of the POLY PM ERP system in production order management. The original system had significant limitations in speed, functionality, and usability for order assignment to artists and production status tracking.",
+        project6_context_p2: "The solution includes a custom API that allows multiple simultaneous connections to the POLY PM database, an optimized web interface for quick order assignment, status change management, order release, pattern modification, and complete documentation download. Also includes a scanning module for quality inspection and warehouse pallet management.",
+        project6_metric1: "Active Orders",
+        project6_metric2: "Artists",
+        project6_metric3: "Efficiency",
+        project6_metric4: "Completed Today",
+        project6_improvements_title: "Implemented Improvements",
+        project6_improvement1: "Assignment speed 10x faster than original system",
+        project6_improvement2: "Multiple order completion (impossible in POLY PM)",
+        project6_improvement3: "Custom API for multiple concurrent connections",
+        project6_improvement4: "Automated download of complete documentation for artists",
+        project6_improvement5: "Scanning module for quality control and warehouse management",
+
+        // Common modal elements
+        section_context: "Project Context",
+        section_flow: "System Flow",
+        section_features: "Main Features",
+        section_benefits: "Solution Benefits",
+        section_impact: "Department Impact",
+        section_functions: "Key Functionalities",
+        section_improvements: "Implemented Improvements",
+        step_number: "Step",
     }
 };
 
 // Función para cambiar el idioma
 function changeLanguage(lang) {
     localStorage.setItem('preferredLanguage', lang);
-    
+
     // Actualizar todos los elementos con data-i18n
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
@@ -301,15 +573,15 @@ function changeLanguage(lang) {
             }
         }
     });
-    
+
     // Actualizar botones de idioma
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
     });
     document.querySelector(`[data-lang="${lang}"]`).classList.add('active');
-    
+
     // Actualizar el título del documento
-    const title = lang === 'es' 
+    const title = lang === 'es'
         ? 'Ovidio Ascencio - Desarrollador Full-Stack .NET'
         : 'Ovidio Ascencio - Full-Stack .NET Developer';
     document.title = title;
@@ -319,7 +591,7 @@ function changeLanguage(lang) {
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLanguage') || 'es';
     changeLanguage(savedLang);
-    
+
     // Event listeners para botones de idioma
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', () => {
