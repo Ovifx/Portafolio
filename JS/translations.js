@@ -1,7 +1,5 @@
-// Sistema de traducciones
 const translations = {
     es: {
-        // Navegación
         nav_inicio: "Inicio",
         nav_sobre_mi: "Sobre Mí",
         nav_experiencia: "Experiencia",
@@ -9,20 +7,17 @@ const translations = {
         nav_proyectos: "Proyectos",
         nav_contacto: "Contacto",
 
-        // Hero
         hero_greeting: "Hola, soy",
         hero_description: "Desarrollador Full-Stack .NET con más de 3 años implementando soluciones empresariales críticas y gestionando infraestructura TI",
         hero_btn_projects: "Ver Proyectos",
         hero_btn_contact: "Contáctame",
 
-        // Sobre Mí
         about_title: "Sobre Mí",
         about_description: "Desarrollador Full-Stack especializado en .NET con experiencia comprobada en sistemas empresariales críticos. Actualmente trabajando como Analista IT en Select Solutions, donde lidero el desarrollo de soluciones end-to-end desde análisis hasta despliegue en producción. Especializado en creacion de sistemas eficientes y escalables.",
         about_years: "Años de Experiencia",
         about_projects: "Proyectos Completados",
         about_commitment: "Compromiso",
 
-        // Experiencia
         exp_title: "Experiencia Profesional",
         exp_current: "Actualidad",
         exp_job1_title: "Analista IT",
@@ -51,7 +46,6 @@ const translations = {
         exp_job3_desc3: "Instalación y configuración de redes estructuradas (cableado UTP Cat 5e/6)",
         exp_job3_desc4: "Administración de Windows, Microsoft 365 y gestión de impresoras de red",
 
-        // Habilidades
         skills_title: "Habilidades Técnicas",
         skills_backend: "Backend Development",
         skills_backend_desc: "C#, .NET Framework/Core, ASP.NET MVC, Entity Framework, Node.js",
@@ -66,7 +60,6 @@ const translations = {
         skills_automation: "Automatización",
         skills_automation_desc: "Python Scripts, JSX (Adobe ExtendScript), PowerShell",
 
-        // Habilidades Blandas
         soft_skills_title: "Habilidades Blandas",
         soft_responsibility: "Responsabilidad",
         soft_responsibility_desc: "Compromiso con plazos y entrega de soluciones de calidad en proyectos críticos empresariales",
@@ -99,14 +92,12 @@ const translations = {
         soft_improvisation: "Capacidad de improvisación",
         soft_improvisation_desc: "Flexibilidad para adaptarse a situaciones imprevistas y resolver problemas sin planificación previa",
 
-        // Idiomas
         languages_title: "Idiomas",
         lang_spanish: "Español",
         lang_spanish_desc: "Nativo - Dominio completo",
         lang_english: "Inglés",
         lang_english_desc: "En desarrollo - Lectura y escritura: Intermedio | Conversación y comprensión auditiva: Básico",
 
-        // Proyectos
         projects_title: "Proyectos Destacados",
         project1_title: "Sistema de Facturación Electrónica DTE",
         project1_desc: "Solución completa integrada con Ministerio de Hacienda de El Salvador. Soporte para múltiples tipos de documentos tributarios con firma digital certificada.",
@@ -122,7 +113,6 @@ const translations = {
         project6_desc: "Desarrollo de módulos especializados para sistema POLY PM: control de calidad, gestión de órdenes de producción e importadores de datos.",
         btn_more_info: "Más Información",
 
-        // Contacto
         contact_title: "Contacto",
         contact_ready: "¿Listo para trabajar juntos?",
         contact_available: "Estoy disponible para proyectos freelance o posiciones tiempo completo. ¡Hablemos!",
@@ -139,13 +129,11 @@ const translations = {
         form_submit: "Enviar Mensaje",
         form_success: "¡Gracias {name}! Tu mensaje ha sido enviado. Te contactaré pronto al correo {email}.",
 
-        // Footer
         footer_rights: "Todos los derechos reservados.",
         modal_projects_title: "Proyectos Destacados — Detalles",
         modal_close: "Cerrar",
         modal_open : "Ver Detalles de Proyectos",
 
-        // Proyecto 1 - DTE
         project1_modal_title: "Sistema de Facturación Electrónica DTE",
         project1_modal_subtitle: "Integración completa con Ministerio de Hacienda de El Salvador",
         project1_context_title: "Contexto del Proyecto",
@@ -173,7 +161,6 @@ const translations = {
         project1_feature4: "Sistema de notificaciones con detalles específicos de errores",
         project1_feature5: "Integración completa con servicios gubernamentales",
 
-        // Proyecto 2 - Inventario IP
         project2_modal_title: "Sistema de Control de Inventario de IPs",
         project2_modal_subtitle: "Gestión integral de infraestructura de red corporativa",
         project2_context_title: "Contexto del Proyecto",
@@ -201,7 +188,6 @@ const translations = {
         project2_feature4: "Integración con Apache Guacamole para soporte remoto",
         project2_feature5: "Historial de cambios de estado y disponibilidad",
 
-        // Proyecto 3 - Adobe
         project3_modal_title: "Suite de Automatización para Adobe Illustrator",
         project3_modal_subtitle: "Scripts personalizados para optimización de procesos creativos",
         project3_context_title: "Contexto del Proyecto",
@@ -218,7 +204,6 @@ const translations = {
         project3_impact4: "Liberación de tiempo creativo para tareas de mayor valor",
         project3_impact5: "Capacitación simplificada para nuevos integrantes del equipo",
 
-        // Proyecto 4 - Tickets
         project4_modal_title: "Generador Automático de Tickets de Precios",
         project4_modal_subtitle: "Solución de impresión masiva con personalización dinámica",
         project4_context_title: "Contexto del Proyecto",
@@ -234,7 +219,6 @@ const translations = {
         project4_benefit4: "Integración directa con impresoras Zebra para impresión profesional",
         project4_benefit5: "Procesamiento de cientos de tickets en minutos",
 
-        // Proyecto 5 - ZKTeco
         project5_modal_title: "Sistema de Control de Terminales ZKTeco",
         project5_modal_subtitle: "Gestión centralizada de asistencia biométrica",
         project5_context_title: "Contexto del Proyecto",
@@ -251,7 +235,6 @@ const translations = {
         project5_function4: "Extracción y consolidación de registros de asistencia",
         project5_function5: "Recuperación total de funcionalidad crítica del sistema de marcaciones",
 
-        // Proyecto 6 - ERP
         project6_modal_title: "Módulos Personalizados para ERP POLY PM",
         project6_modal_subtitle: "Optimización de procesos de gestión de órdenes de producción",
         project6_context_title: "Contexto del Proyecto",
@@ -268,7 +251,6 @@ const translations = {
         project6_improvement4: "Descarga automatizada de documentación completa para artistas",
         project6_improvement5: "Módulo de escaneo para control de calidad y gestión de bodega",
 
-        // Elementos comunes del modal
         section_context: "Contexto del Proyecto",
         section_flow: "Flujo del Sistema",
         section_features: "Características Principales",
@@ -279,7 +261,6 @@ const translations = {
         step_number: "Paso",
     },
     en: {
-        // Navigation
         nav_inicio: "Home",
         nav_sobre_mi: "About Me",
         nav_experiencia: "Experience",
@@ -287,20 +268,17 @@ const translations = {
         nav_proyectos: "Projects",
         nav_contacto: "Contact",
 
-        // Hero
         hero_greeting: "Hi, I'm",
         hero_description: "Full-Stack .NET Developer with over 3 years implementing critical enterprise solutions and managing IT infrastructure",
         hero_btn_projects: "View Projects",
         hero_btn_contact: "Contact Me",
 
-        // About Me
         about_title: "About Me",
         about_description: "Full-Stack Developer specialized in .NET with proven experience in critical enterprise systems. Currently working as IT Analyst at Select Solutions, where I lead the development of end-to-end solutions from analysis to production deployment. Specialized in creating efficient and scalable systems.",
         about_years: "Years of Experience",
         about_projects: "Completed Projects",
         about_commitment: "Commitment",
 
-        // Experience
         exp_title: "Professional Experience",
         exp_current: "Present",
         exp_job1_title: "IT Analyst",
@@ -329,7 +307,6 @@ const translations = {
         exp_job3_desc3: "Installation and configuration of structured networks (UTP Cat 5e/6 cabling)",
         exp_job3_desc4: "Windows administration, Microsoft 365 and network printer management",
 
-        // Skills
         skills_title: "Technical Skills",
         skills_backend: "Backend Development",
         skills_backend_desc: "C#, .NET Framework/Core, ASP.NET MVC, Entity Framework, Node.js",
@@ -344,7 +321,6 @@ const translations = {
         skills_automation: "Automation",
         skills_automation_desc: "Python Scripts, JSX (Adobe ExtendScript), PowerShell",
 
-        // Soft Skills
         soft_skills_title: "Soft Skills",
         soft_responsibility: "Responsibility",
         soft_responsibility_desc: "Commitment to deadlines and delivery of quality solutions in critical business projects",
@@ -377,14 +353,12 @@ const translations = {
         soft_improvisation: "Improvisation Ability",
         soft_improvisation_desc: "Flexibility to adapt to unforeseen situations and solve problems without prior planning",
 
-        // Languages
         languages_title: "Languages",
         lang_spanish: "Spanish",
         lang_spanish_desc: "Native - Full proficiency",
         lang_english: "English",
         lang_english_desc: "In development - Reading and writing: Intermediate | Conversation and listening comprehension: Basic",
 
-        // Projects
         projects_title: "Featured Projects",
         project1_title: "DTE Electronic Invoicing System",
         project1_desc: "Complete solution integrated with El Salvador's Ministry of Finance. Support for multiple types of tax documents with certified digital signature.",
@@ -400,7 +374,6 @@ const translations = {
         project6_desc: "Development of specialized modules for POLY PM system: quality control, production order management and data importers.",
         btn_more_info: "More Information",
 
-        // Contact
         contact_title: "Contact",
         contact_ready: "Ready to work together?",
         contact_available: "I'm available for freelance projects or full-time positions. Let's talk!",
@@ -417,13 +390,11 @@ const translations = {
         form_submit: "Send Message",
         form_success: "Thank you {name}! Your message has been sent. I'll contact you soon at {email}.",
 
-        // Footer
         footer_rights: "All rights reserved.",
         modal_projects_title: "Featured Projects — Details",
         modal_close: "Close",
         modal_open : "View Project Details",
 
-        // Project 1 - DTE
         project1_modal_title: "DTE Electronic Invoicing System",
         project1_modal_subtitle: "Complete integration with El Salvador's Ministry of Finance",
         project1_context_title: "Project Context",
@@ -451,7 +422,6 @@ const translations = {
         project1_feature4: "Notification system with specific error details",
         project1_feature5: "Complete integration with government services",
 
-        // Project 2 - IP Inventory
         project2_modal_title: "IP Inventory Control System",
         project2_modal_subtitle: "Comprehensive corporate network infrastructure management",
         project2_context_title: "Project Context",
@@ -479,7 +449,6 @@ const translations = {
         project2_feature4: "Integration with Apache Guacamole for remote support",
         project2_feature5: "History of status changes and availability",
 
-        // Project 3 - Adobe
         project3_modal_title: "Adobe Illustrator Automation Suite",
         project3_modal_subtitle: "Custom scripts for creative process optimization",
         project3_context_title: "Project Context",
@@ -496,7 +465,6 @@ const translations = {
         project3_impact4: "Liberation of creative time for higher-value tasks",
         project3_impact5: "Simplified training for new team members",
 
-        // Project 4 - Tickets
         project4_modal_title: "Automatic Price Ticket Generator",
         project4_modal_subtitle: "Mass printing solution with dynamic customization",
         project4_context_title: "Project Context",
@@ -512,7 +480,6 @@ const translations = {
         project4_benefit4: "Direct integration with Zebra printers for professional printing",
         project4_benefit5: "Processing of hundreds of tickets in minutes",
 
-        // Project 5 - ZKTeco
         project5_modal_title: "ZKTeco Terminal Control System",
         project5_modal_subtitle: "Centralized biometric attendance management",
         project5_context_title: "Project Context",
@@ -529,7 +496,6 @@ const translations = {
         project5_function4: "Extraction and consolidation of attendance records",
         project5_function5: "Complete recovery of critical attendance system functionality",
 
-        // Project 6 - ERP
         project6_modal_title: "Custom ERP POLY PM Modules",
         project6_modal_subtitle: "Production order management process optimization",
         project6_context_title: "Project Context",
@@ -546,7 +512,6 @@ const translations = {
         project6_improvement4: "Automated download of complete documentation for artists",
         project6_improvement5: "Scanning module for quality control and warehouse management",
 
-        // Common modal elements
         section_context: "Project Context",
         section_flow: "System Flow",
         section_features: "Main Features",
@@ -558,7 +523,6 @@ const translations = {
     }
 };
 
-// Función para cambiar el idioma
 function changeLanguage(lang) {
     localStorage.setItem('preferredLanguage', lang);
 
@@ -587,12 +551,10 @@ function changeLanguage(lang) {
     document.title = title;
 }
 
-// Inicializar idioma al cargar la página
 document.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLanguage') || 'es';
     changeLanguage(savedLang);
 
-    // Event listeners para botones de idioma
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             const lang = btn.getAttribute('data-lang');

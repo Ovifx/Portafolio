@@ -669,7 +669,6 @@ footer {
     color: var(--primary);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
@@ -850,9 +849,6 @@ footer {
 }
 
 
-/* ================================
-   VARIABLES Y TEMA
-================================ */
 :root {
     --primary: #6366f1;
     --primary-dark: #4f46e5;
@@ -895,9 +891,6 @@ body.dark {
     --gradient-subtle: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
 }
 
-/* ================================
-   RESET Y BASE
-================================ */
 * {
     margin: 0;
     padding: 0;
@@ -913,9 +906,6 @@ body {
     min-height: 100vh;
 }
 
-/* ================================
-   HEADER CON TOGGLE
-================================ */
 .header {
     background: var(--bg-secondary);
     border-bottom: 1px solid var(--border);
@@ -960,7 +950,6 @@ body {
     box-shadow: var(--shadow-md);
 }
 
-/* Toggle Switch */
 .theme-toggle {
     position: relative;
     width: 60px;
@@ -1001,9 +990,6 @@ body.dark .toggle-slider {
 
 
 
-/* ================================
-   PROJECT CARD
-================================ */
 .project-card {
     background: var(--bg-secondary);
     border-radius: 24px;
@@ -1021,9 +1007,6 @@ body.dark .toggle-slider {
     border-color: var(--primary-light);
 }
 
-/* ================================
-   PROJECT HEADER
-================================ */
 .project-header {
     display: flex;
     align-items: flex-start;
@@ -1059,9 +1042,6 @@ body.dark .toggle-slider {
     font-size: 1rem;
 }
 
-/* ================================
-   SECTION BLOCKS
-================================ */
 .section-block {
     margin-bottom: 2.5rem;
 }
@@ -1093,9 +1073,6 @@ body.dark .toggle-slider {
     margin-bottom: 0;
 }
 
-/* ================================
-   FLOW STEPS
-================================ */
 .flow-steps {
     display: flex;
     flex-direction: column;
@@ -1144,9 +1121,6 @@ body.dark .toggle-slider {
     line-height: 1.7;
 }
 
-/* ================================
-   METRICS GRID
-================================ */
 .metrics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1187,9 +1161,6 @@ body.dark .toggle-slider {
     letter-spacing: 0.05em;
 }
 
-/* ================================
-   HIGHLIGHT BLOCK
-================================ */
 .highlight-block {
     background: var(--bg);
     border-left: 4px solid var(--primary);
@@ -1227,9 +1198,6 @@ body.dark .toggle-slider {
     font-weight: 700;
 }
 
-/* ================================
-   TECH STACK
-================================ */
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -1255,9 +1223,6 @@ body.dark .toggle-slider {
     box-shadow: var(--shadow-md);
 }
 
-/* ================================
-   RESPONSIVE
-================================ */
 @media (max-width: 1024px) {
     .hero h2 {
         font-size: 2.5rem;
